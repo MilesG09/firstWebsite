@@ -55,3 +55,7 @@ li {
     background: #444;
     box-shadow: 0 0 10px rgba(255,255,255,0.1);
 }
+
+#about {
+    font-family: 'Georgia', serif; /* Change this to any font you like */
+}
