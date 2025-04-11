@@ -7,21 +7,26 @@ body {
     color: #ffffff;
 }
 
+:root {
+    --radius-base: 12px;
+    --radius-large: calc(var(--radius-base) * 2);
+}
+
 .container {
     max-width: 1000px;
     width: 80%;
     margin: auto;
-    padding: 20px;
+    padding: 24px;
     background: rgb(35, 183, 13);
-    border-radius: 20px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    border-radius: var(--radius-large);
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
 }
 
 .video-container {
     position:relative;
     padding-bottom: 56.25%;
     height: 0;
-    overflow: hidden;
+
     max-width: 100%;
 }
 
@@ -31,6 +36,9 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
+    border-radius: var(--radius-base);
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
 }
 
 .profile-pic {
@@ -46,12 +54,12 @@ button {
     cursor: pointer;
     border: none;
     background: #007bff;
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
     border-radius: 5px;
 }
 
 button:hover {
-    background: #0056b3;
+    background: #7b00ff;
 }
 
 ul {
@@ -74,5 +82,5 @@ li {
 }
 
 #about {
-    font-family: 'Georgia', serif; /* Change this to any font you like */
+    font-family: Arial, sans-serif;
 }
