@@ -26,8 +26,8 @@ body {
     position:relative;
     padding-bottom: 56.25%;
     height: 0;
-
     max-width: 100%;
+    width: 100%;
 }
 
 .video-container iframe {
@@ -58,18 +58,28 @@ button {
     border-radius: 5px;
 }
 
+
+
 button:hover {
     background: #7b00ff;
 }
 
 ul {
-    list-style: none;
+    display: flex;
+    flex-direction: column; /* Keeps list vertical */
+    align-items: center;    /* Centers items horizontally */
+    gap: 1rem;              /* Adds spacing between */
     padding: 0;
+    margin: 0;
+    list-style: none;       /* Optional: removes bullets */
 }
 
-li {
-    margin: 10px 0;
+ul li {
+    width: 100%;
+    max-width: 800px;
 }
+
+
 
 .dark-mode {
     background-color: #333;
